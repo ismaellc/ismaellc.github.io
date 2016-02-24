@@ -25,9 +25,9 @@
         
         var forma =new THREE.SphereGeometry(1);
         var material=new THREE.MeshNormalMaterial();
-        var cubo =new THREE.Mesh(forma,material);
+        var esfera =new THREE.Mesh(forma,material);
         
-        escena.add(cubo);
+        escena.add(esfera);
         
         function render(){
           requestAnimationFrame(render);
