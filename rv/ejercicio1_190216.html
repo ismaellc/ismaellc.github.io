@@ -31,6 +31,10 @@
         
         function render(){
           requestAnimationFrame(render);
+          
+          cubo.rotation.x+=10000;
+          cubo.rotation.y+=10000;
+     
           renderer.render(escena, camara);
         }
           render();
