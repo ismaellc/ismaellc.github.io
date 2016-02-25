@@ -16,9 +16,9 @@
         var fov=75;
         var aspect = window.innerWidth/window.innerHeight;
         var near =0.1;
-        var far=10;
+        var far=1000;
         var camara=new THREE.PerspectiveCamera(fov,aspect,near,far);
-        camara.position.z=30;
+        camara.position.z=60;
         var renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth,window.innerHeight);
         document.body.appendChild(renderer.domElement);
