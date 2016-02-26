@@ -24,7 +24,8 @@
         document.body.appendChild(renderer.domElement);
         
         //La figura se realiza sobre el plano xy
-        var puntos= new THREE.Vector2((0,1),(10,10),(0,20));
+        var puntos=[];
+        puntos.push(new THREE.Vector2((0,1),(10,10),(0,20)));
         
         
         var forma =new THREE.LatheGeometry(puntos); //La figura se realiza sobre el eje y
