@@ -10,7 +10,7 @@ var cilindro = new THREE.Mesh(cilindroForma);
 esfera1.position.y=2;
 esfera2.position.y=-2;
 //se genera una forma (geometria) abstracta.
-var forma= new THREE.geometry();
+var forma= new THREE.Geometry();
 //se utiliza el paquete GeometryUtils para conjugar las formas.
 THREE.DoemetryUtils.merge(forma,esfera1);
 THREE.DoemetryUtils.merge(forma,esfera2);
