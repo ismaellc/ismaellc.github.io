@@ -18,6 +18,7 @@ THREE.GeometryUtils.merge(forma,cilindro);
 //se genera la malla a partir de la forma.
 malla = new THREE.Mesh(forma);
 escena= new THREE.Scene();
+escena.add(malla)
 //se inicializa la camara y el *renderer*.
 camara = new THREE.PerspectiveCamera();
 camara.position.z=10;
