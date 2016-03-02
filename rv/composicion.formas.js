@@ -12,9 +12,9 @@ esfera2.position.y=-2;
 //se genera una forma (geometria) abstracta.
 var forma= new THREE.Geometry();
 //se utiliza el paquete GeometryUtils para conjugar las formas.
-THREE.GoemetryUtils.merge(forma,esfera1);
-THREE.GoemetryUtils.merge(forma,esfera2);
-THREE.GoemetryUtils.merge(forma,cilindro);
+THREE.GeometryUtils.merge(forma,esfera1);
+THREE.GeometryUtils.merge(forma,esfera2);
+THREE.GeometryUtils.merge(forma,cilindro);
 //se genera la malla a partir de la forma.
 malla =new THREE.Mesh(forma);
 wireframe=new THREE.WireframeHelper(malla, 0x00ff00);
