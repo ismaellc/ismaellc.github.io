@@ -1,4 +1,4 @@
-function setup(){
+function setup() {
 //se plantean las geometrias a utilizar
 var esferaForma=new THREE.SphereGeometry(1);
 var cilindroForma=new THREE.CylinderGeometry(0.5,0.5,4);
@@ -24,14 +24,15 @@ camara.position.z=10;
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
 }
-funtion loop(){
+function loop(){
   requestAnimationFrame(loop);
-  //Es importante notar que las rotaciones son sobre los ejes que estan fijos a la malla, no los ejes del lienzo.Inicialmente ambos coinciden.
+  //Es importante notar que las rotaciones son sobre los ejes que estan fijos a la malla, 
+  //no los ejes del lienzo.Inicialmente ambos coinciden.
   malla.rotation.x +=0.01;
   malla.rotation.y +=0.01;
   
   renderer.render(escena,camara);
-  }
+}
   var escena, camara, renderer, malla;
   setup();
   loop();
