@@ -12,15 +12,17 @@ esfera2.position.y=-2;
 //se genera una forma (geometria) abstracta.
 var forma= new THREE.Geometry();
 //se utiliza el paquete GeometryUtils para conjugar las formas.
-THREE.DoemetryUtils.merge(forma,esfera1);
-THREE.DoemetryUtils.merge(forma,esfera2);
-THREE.DoemetryUtils.merge(forma,cilindro);
+THREE.GoemetryUtils.merge(forma,esfera1);
+THREE.GoemetryUtils.merge(forma,esfera2);
+THREE.GoemetryUtils.merge(forma,cilindro);
 //se genera la malla a partir de la forma.
 malla =new THREE.Mesh(forma);
+wireframe=new THREE.WireframeHelper(malla, 0x00ff00);
+escena.add(malla,wireframe);
 //se inicializa la camara y el *renderer*.
 camara =new THREE.PerspectiveCamera();
 camara.position.z=10;
-
+rendere=new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
 }
