@@ -32,6 +32,7 @@ function loop(){
   //no los ejes del lienzo.Inicialmente ambos coinciden.
   malla.rotation.x +=0.01;
   malla.rotation.y +=0.01;
+  malla.rotation.z = 90;
   
   renderer.render(escena,camara);
 }
