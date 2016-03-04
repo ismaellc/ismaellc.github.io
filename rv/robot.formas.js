@@ -12,7 +12,7 @@ var esfera4 = new THREE.Mesh(esferaForma);
 // se desplazan las mallas.
 esfera1.position.x=2;
 esfera2.position.x=-2;
-esfera3.position.x=-2;
+esfera3.position.x=2;
 esfera4.position.x=-2;
 esfera3.position.z=-4;
 esfera4.position.z=-4;
