@@ -9,7 +9,7 @@ this.add(this.pierna);
 this.add(this.pie);
 }
 
-Pierna.prototype = new THREE.Objet3D();
+Pierna.prototype = new THREE.Object3D();
 
 function septup(){
   var cuerpo =new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,10));
