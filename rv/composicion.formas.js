@@ -30,9 +30,9 @@ function loop(){
   requestAnimationFrame(loop);
   //Es importante notar que las rotaciones son sobre los ejes que estan fijos a la malla, 
   //no los ejes del lienzo.Inicialmente ambos coinciden.
-  malla.rotation.x +=0.01;
-  malla.rotation.y +=0.01;
-  malla.rotation.z = 90;
+  malla.rotation.x +=0.00;
+  malla.rotation.y +=0.00;
+  malla.rotation.z = 0;
   
   renderer.render(escena,camara);
 }
