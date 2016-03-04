@@ -2,14 +2,14 @@ function setup() {
 //se crea una figura para las ruedas(orugas)
 var figura = new THREE.Shape();
         figura.moveTo(-2,0)
-        figura.lineTo(-.05,2);
+        figura.lineTo(-0.5,2);
         figura.lineTo(3,0);
         figura.lineTo(-2,0);
 var trianguloForma =new THREE.ExtrudeGeometry(figura,{amount: 1});
 //se plantean las geometrias a utilizar
 //var esferaForma = new THREE.SphereGeometry(1);
 var cilindroForma = new THREE.CylinderGeometry(0.25,0.25,3);
-var cilindroForma2 = new THREE.CylinderGeometry(.5,.5,1);
+var cilindroForma2 = new THREE.CylinderGeometry(0.5,0.5,1);
 var cilindroForma3 = new THREE.CylinderGeometry(0.25,0.25,1);
 var cuadradoForma =new THREE.BoxGeometry(2,2,2);
 //para generar una forma combinada se requiere de las mallas para poder desplazar las formas en el espacio virtual.
@@ -73,8 +73,8 @@ function loop(){
   requestAnimationFrame(loop);
   //Es importante notar que las rotaciones son sobre los ejes que estan fijos a la malla, 
   //no los ejes del lienzo.Inicialmente ambos coinciden.
-  malla.rotation.x =0.0;
-  malla.rotation.y =0.0;
+  malla.rotation.x =0.01;
+  malla.rotation.y =0.01;
   
   renderer.render(escena,camara);
 }
