@@ -4,7 +4,7 @@ function setup(){
  var material=new THREE.MeshBasicMaterial({map:textura});
  var forma=new THREE.SphereGeometry(1);
  malla=new THREE.Mesh(forma,material);
- malla.rotation.z += 25;
+ //malla.rotation.z += 25;
 
 escena= new THREE.Scene();
 escena.add(malla);
