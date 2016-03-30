@@ -29,11 +29,11 @@ function setup(){
   }
 
 function loop(){
-  obstaculo1 = raycaster1.intersectObjects(cubo1);
-  obstaculo2 = raycaster2.intersectObjects(cubo2);
+  obstaculo1 = raycaster1.intersectObject(cubo1);
+  obstaculo2 = raycaster2.intersectObject(cubo2);
   
   if((obstaculo1.length > 0 && (obstaculo1[0].distance <= 0.5))||
-    (obstaculo2.length > 0 && (obstaculo2[0].distance <=0.5)))
+    (obstaculo2.length > 0 && (obstaculo2[0].distance <= 0.5)))
     step = -step;
   
   pelota.position.x += step;
