@@ -8,7 +8,9 @@ var esfera2 = new THREE.Mesh(esferaForma);
 var cilindro = new THREE.Mesh(cilindroForma);
 // se desplazan las mallas.
 esfera1.position.y=2;
+esfera1.position.x=2;
 esfera2.position.y=-2;
+esfera1.position.x=2;
 //se genera una forma (geometria) abstracta.
 var forma= new THREE.Geometry();
 //se utiliza el paquete GeometryUtils para conjugar las formas.
