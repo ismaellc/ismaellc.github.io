@@ -93,6 +93,7 @@ function loop(){
       
     piernaD.rotation.x += step;
     piernaI.rotation.x -= step;
+    camara.rotation.y = .01;
 }
   var escena, camara, renderer;
   var step, piernaD, piernaI;
