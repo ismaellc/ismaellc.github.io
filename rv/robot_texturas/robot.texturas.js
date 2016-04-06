@@ -17,7 +17,7 @@ var formabrazo = new THREE.CylinderGeometry(.5,0,3);
 var formahombro = new THREE.SphereGeometry(1);
 var formamano = new THREE.SphereGeometry(.25);
 var formaantena = new THREE.CylinderGeometry(0,.25,2);
-var cabeza = new THREE.Mesh(formacabeza,new THREE.MeshBasicMaterial({map: texturaCabeza}));
+var cabeza = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 var cuerpo = new THREE.Mesh(formacuerpo);
 piernaD = new Pierna();
 piernaI = new Pierna();
@@ -67,6 +67,13 @@ escena.add(manoD);
 escena.add(manoI);
 escena.add(piernaD);
 escena.add(piernaI);
+
+//Se declara una fuente de luz
+var luzPuntual=new THREE.PointLight(0xffffff);
+	luzPuntual.position.x=10;
+	luzPuntual.position.y=10;
+	luzPuntual.position.z=10;
+	escena.add(luzPuntual);
 
 //se inicializa la camara y el *renderer*.
 camara = new THREE.PerspectiveCamera();
