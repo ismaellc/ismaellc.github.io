@@ -1,6 +1,6 @@
 function Pierna(){
 	THREE.Object3D.call(this);
-	this.pierna = new THREE.Mesh(new THREE.BoxGeometry(2,3,2));
+	this.pierna = new THREE.Mesh(new THREE.BoxGeometry(2,3,2),new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 	this.pierna.position.y = -1.5;
 	this.add(this.pierna);
 }
@@ -18,17 +18,17 @@ var formahombro = new THREE.SphereGeometry(1);
 var formamano = new THREE.SphereGeometry(.25);
 var formaantena = new THREE.CylinderGeometry(0,.25,2);
 var cabeza = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
-var cuerpo = new THREE.Mesh(formacuerpo);
+var cuerpo = new THREE.Mesh(formacuerpo,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 piernaD = new Pierna();
 piernaI = new Pierna();
-var brazoD = new THREE.Mesh(formabrazo);
-var brazoI = new THREE.Mesh(formabrazo);
-var hombroD = new THREE.Mesh(formahombro);
-var hombroI = new THREE.Mesh(formahombro);
-var manoI = new THREE.Mesh(formamano);
-var manoD = new THREE.Mesh(formamano);
-var antena = new THREE.Mesh(formaantena);
-var antenab = new THREE.Mesh(formamano);
+var brazoD = new THREE.Mesh(formabrazo,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var brazoI = new THREE.Mesh(formabrazo,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var hombroD = new THREE.Mesh(formahombro,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var hombroI = new THREE.Mesh(formahombro,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var manoI = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var manoD = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var antena = new THREE.Mesh(formaantena,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 
 // se desplazan las mallas.
 cabeza.position.y = 12;
