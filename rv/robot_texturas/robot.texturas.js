@@ -8,6 +8,8 @@ function Pierna(){
 Pierna.prototype = new THREE.Object3D();
 
 function setup() {
+THREE.ImageUtils.crossOrigin='';
+var texturaCabeza = THREE.ImageUtils.loadTexture('imagenes/cabeza.png');
 //se plantean las geometrias a utilizar
 var formacabeza = new THREE.BoxGeometry(8,6,8);
 var formacuerpo = new THREE.BoxGeometry(6,6,6);
@@ -15,7 +17,7 @@ var formabrazo = new THREE.CylinderGeometry(.5,0,3);
 var formahombro = new THREE.SphereGeometry(1);
 var formamano = new THREE.SphereGeometry(.25);
 var formaantena = new THREE.CylinderGeometry(0,.25,2);
-var cabeza = new THREE.Mesh(formacabeza);
+var cabeza = new THREE.Mesh(formacabeza,new THREE.MeshBasicMaterial({map: texturaCabeza}));
 var cuerpo = new THREE.Mesh(formacuerpo);
 piernaD = new Pierna();
 piernaI = new Pierna();
