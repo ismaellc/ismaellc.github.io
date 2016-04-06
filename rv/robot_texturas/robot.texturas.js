@@ -25,10 +25,10 @@ var brazoD = new THREE.Mesh(formabrazo,new THREE.MeshPhongMaterial({color: '#b9b
 var brazoI = new THREE.Mesh(formabrazo,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 var hombroD = new THREE.Mesh(formahombro,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
 var hombroI = new THREE.Mesh(formahombro,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
-var manoI = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
-var manoD = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var manoI = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
+var manoD = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
 var antena = new THREE.Mesh(formaantena,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
-var antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+var antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
 
 // se desplazan las mallas.
 cabeza.position.y = 12;
