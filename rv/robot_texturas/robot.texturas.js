@@ -9,7 +9,7 @@ Pierna.prototype = new THREE.Object3D();
 
 function setup() {
 THREE.ImageUtils.crossOrigin='';
-var texturaCabeza = THREE.ImageUtils.loadTexture('imagenes/cabeza.png');
+var texturaCabeza = THREE.ImageUtils.loadTexture('imagenes/cabeza.PNG');
 //se plantean las geometrias a utilizar
 var formacabeza = new THREE.BoxGeometry(8,6,8);
 var formacuerpo = new THREE.BoxGeometry(6,6,6);
