@@ -72,7 +72,7 @@ this.brazoD.position.y = 7.5;
 this.antena.position.y = 16;
 this.antenab.position.y = 17;
 this.ojo.position.y=12;
-this.ojo.position.z=4.01;
+this.ojo.position.z=5;
 
 this.add(this.antenab);
 this.add(this.antena);
