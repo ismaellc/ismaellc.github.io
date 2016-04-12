@@ -50,16 +50,6 @@ this.brazoI = new Brazo();
 this.antena = new THREE.Mesh(formaantena,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 this.antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
 
- var figura = new THREE.Shape();  //La figura se realiza sobre el plano xy
-		figura.moveTo(0,1);
-		for ( var i=0; i<7; i+=.01){
-          figura.lineTo((Math.cos(i)),(Math.sin(i)));
-		  }
-		  
-		var forma = new THREE.ShapeGeometry(figura);
-		//var forma =new THREE.ExtrudeGeometry(figura,{amount: 1, bevelEnabled: false});
-        this.ojo = new THREE.Mesh(forma,new THREE.MeshNormalMaterial());
-
 // se desplazan las mallas.
 this.cabeza.position.y = 12;
 this.cabezaCara.position.y = 12;
@@ -75,8 +65,6 @@ this.brazoD.position.x = 4;
 this.brazoD.position.y = 7.5;
 this.antena.position.y = 16;
 this.antenab.position.y = 17;
-this.ojo.position.y=12;
-this.ojo.position.z=5;
 
 this.add(this.antenab);
 this.add(this.antena);
@@ -87,7 +75,6 @@ this.add(this.brazoD);
 this.add(this.brazoI);
 this.add(this.piernaD);
 this.add(this.piernaI);
-this.add(this.ojo);
 }
 
 Robot.prototype = new THREE.Object3D();
