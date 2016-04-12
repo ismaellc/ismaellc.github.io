@@ -39,7 +39,8 @@ var formabrazo = new THREE.CylinderGeometry(.5,0,3);
 var formahombro = new THREE.SphereGeometry(1);
 var formamano = new THREE.SphereGeometry(.25);
 var formaantena = new THREE.CylinderGeometry(0,.25,2);
-this.cabeza = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({map:texturaCabeza}));
+this.cabezaCara = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({map:texturaCabeza}));
+this.cabeza = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 this.cuerpo = new THREE.Mesh(formacuerpo,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 this.piernaD = new Pierna();
 this.piernaI = new Pierna();
@@ -60,6 +61,8 @@ this.antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00
 
 // se desplazan las mallas.
 this.cabeza.position.y = 12;
+this.cabezaCara.position.y = 12;
+this.cabezaCara.position.z = 0.001;
 this.cuerpo.position.y = 6;
 this.piernaD.position.x = 1;
 this.piernaD.position.y = 3;
@@ -77,6 +80,7 @@ this.ojo.position.z=5;
 this.add(this.antenab);
 this.add(this.antena);
 this.add(this.cabeza);
+this.add(this.cabezaCara);
 this.add(this.cuerpo);
 this.add(this.brazoD);
 this.add(this.brazoI);
