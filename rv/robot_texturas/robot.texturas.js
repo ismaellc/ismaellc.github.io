@@ -30,6 +30,8 @@ Brazo.prototype = new THREE.Object3D();
 
 
 function Robot(){
+THREE.ImageUtils.crossOrigin='';
+var texturaCabeza=THREE.ImageUtils.loadTexture("imagenes/cabeza.PNG");
 THREE.Object3D.call(this);
 var formacabeza = new THREE.BoxGeometry(8,6,8);
 var formacuerpo = new THREE.BoxGeometry(6,6,6);
@@ -37,7 +39,7 @@ var formabrazo = new THREE.CylinderGeometry(.5,0,3);
 var formahombro = new THREE.SphereGeometry(1);
 var formamano = new THREE.SphereGeometry(.25);
 var formaantena = new THREE.CylinderGeometry(0,.25,2);
-this.cabeza = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
+this.cabeza = new THREE.Mesh(formacabeza,new THREE.MeshPhongMaterial({map:texturaCabeza}));
 this.cuerpo = new THREE.Mesh(formacuerpo,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 this.piernaD = new Pierna();
 this.piernaI = new Pierna();
