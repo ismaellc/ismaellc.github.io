@@ -62,7 +62,7 @@ this.antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00
 // se desplazan las mallas.
 this.cabeza.position.y = 12;
 this.cabezaCara.position.y = 12;
-this.cabezaCara.position.z = 0.01;
+this.cabezaCara.position.z = 0.1;
 this.cuerpo.position.y = 6;
 this.piernaD.position.x = 1;
 this.piernaD.position.y = 3;
