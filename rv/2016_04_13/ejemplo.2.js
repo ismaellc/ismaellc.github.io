@@ -18,21 +18,54 @@ Environment.prototype.setMap=fuction(map){
 }
 
 function setup(){
-  var map = new Array();
-  mapa[0] = "xxxxxxxxxxxxxxxxxxxx";
-  mapa[1] = "xr                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
-  mapa[] = "x                 x";
+  var mapa = new Array();
+  mapa[0]  = "xxxxxxxxxxxxxxxxxxxx";
+  mapa[1]  = "xr                 x";
+  mapa[2]  = "x                  x";
+  mapa[3]  = "x                  x";
+  mapa[4]  = "x                  x";
+  mapa[5]  = "x                  x";
+  mapa[6]  = "x                  x";
+  mapa[7]  = "x                  x";
+  mapa[8]  = "xxx   xxxxxxxxxxxxxx";
+  mapa[9]  = "x                  x";
+  mapa[10] = "x     r            x";
+  mapa[11] = "x                  x";
+  mapa[12] = "x                  x";
+  mapa[13] = "x                  x";
+  mapa[14] = "x                  x";
+  mapa[15] = "x                  x";
+  mapa[16] = "xxxxxxxxxxxx    xxxx";
+  mapa[17] = "x                  x";
+  mapa[18] = "x                  x";
+  mapa[19] = "x                  x";
+  mapa[20] = "xxxxxxxxxxxxxxxxxxxx";
+  
+  environment = new Environment();
+  
+  environment.setMap(mapa);
+  
+  camara=new THREE.PerspectiveCamera();
+  camara.position.z=30;
+  
+  renderer=new THREE.WebGLRenderer();
+  renderer.setZise(window.innerHeigth*.95,window.innerHeigth*.95);
+  document.body.appenChild(renderer.domElement);
+  
+  environment.add(camera);
 }
+
+function loop(){
+  requestAnimationFrame(loop);
+  
+  environment.sense();
+  environment.plan();
+  environmet.act();
+  
+  renderer.render(environment,camara);
+}
+
+var environment, camera, renderer;
+
+setup();
+loop();
