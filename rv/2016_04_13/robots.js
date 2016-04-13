@@ -17,14 +17,14 @@ Robot.prototype.sense= function(environment){
     this.sensor.colision=true;
   else
     this.sensor.colision=false;
-};
+}
 Robot.prototype.plan=function (environment){
   this.actuator.commands=[];
   if (this.sensor.colision==true)
     this.actuator.commands.push('rotateCCW');
   else
     this.actuator.commands.push('goStraight');
-};
+}
 Robot.prototype.act=function(environment){
   var command=this.actuator.commands.pop();
   if( command==undefined)
@@ -45,16 +45,17 @@ Robot.prototype.act=function(environment){
     distance= .05;
   robot.position .x+= distance*Math.cos(robot.rotation.z);
   robot.position .y+= distance*Math.sin(robot.rotation.z);
-};
+  }
+}
 
 Robot.prototype.operations.rotateCW= function (robot,angle){
   if(angle==undefined)
    angle = -Math.PI/2;
   robot.rotation.z+=angle;
-};
+}
 
 Robot.prototype.operations.rotateCCW=function(robot,angle){
   if(angle== undefined)
     angle = Math.PI/2;
   robot.rotation.z+=angle;
-};
+}
