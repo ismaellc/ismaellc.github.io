@@ -5,7 +5,7 @@ function setup(){
 
 	var base = new THREE.Mesh(new THREE.BoxGeometry(5,.1,5),new THREE.MeshPhongMaterial({color: 0x00ff00}));
 
-	var iluminacion = new THREE.AmbientLigth(0xffffff);
+	var iluminacion = new THREE.AmbientLight(0xffffff);
 
 	escena= new THREE.Scene();
 	escena.add(malla);
