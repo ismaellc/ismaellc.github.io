@@ -24,7 +24,7 @@ function setup(){
 	document.body.appendChild(renderer.domElement);
 	
 	renderer.shadowMapEnabled = true;
-	robot.castShadow = true;
+	robot.cuerpo.castShadow = true;
 	base.receiveShadow = true;
 	iluminacion.castShadow = true;
 }
