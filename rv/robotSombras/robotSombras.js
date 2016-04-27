@@ -2,7 +2,7 @@ function setup(){
 	robot = new Robot();
 	robot.position.y = 1;
 	
-	var base = new THREE.Mesh(new THREE.BoxGeometry(15,.1,15),new THREE.MeshPhongMaterial({color: 0x00ff00}));
+	var base = new THREE.Mesh(new THREE.BoxGeometry(15,.1,15),new THREE.MeshPhongMaterial({color: 0xffffff}));
 
 	var iluminacion = new THREE.PointLight(0xffffff);
 	iluminacion.position.y=50;
