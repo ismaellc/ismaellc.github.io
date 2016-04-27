@@ -49,7 +49,7 @@ function setup(){
   camara.position.z=30;
   
   renderer=new THREE.WebGLRenderer();
-  renderer.setZise(window.innerHeigth*.95,window.innerHeigth*.95);
+  renderer.setZise(window.innerHeight*.95,window.innerHeight*.95);
   document.body.appenChild(renderer.domElement);
   
   environment.add(camera);
