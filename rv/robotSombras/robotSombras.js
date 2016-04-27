@@ -23,7 +23,7 @@ function setup(){
 	renderer.setSize(window.innerHeight*.95,window.innerHeight*.95);
 	document.body.appendChild(renderer.domElement);
 	
-	renderer.shadowMap.enabled = true;
+	renderer.shadowMapEnabled = true;
 	robot.castShadow = true;
 	base.receiveShadow = true;
 	iluminacion.castShadow = true;
