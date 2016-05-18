@@ -46,16 +46,16 @@ this.brazoI = new Brazo();
 this.antena = new THREE.Mesh(formaantena,new THREE.MeshPhongMaterial({color: '#b9b9b9'}));
 this.antenab = new THREE.Mesh(formamano,new THREE.MeshPhongMaterial({color: '#00e7e7'}));
 
-/*THREE.ImageUtils.crossOrigin=''; //codigo para servidor
+THREE.ImageUtils.crossOrigin=''; //codigo para servidor
 var texturaCabeza=THREE.ImageUtils.loadTexture("imagenes/cabeza.PNG");
 var formacabezaCara = new THREE.BoxGeometry(7.998,6,8);
 this.cabezaCara = new THREE.Mesh(formacabezaCara,new THREE.MeshPhongMaterial({map:texturaCabeza}));
 this.cabezaCara.position.y = 12;
 this.cabezaCara.position.z = 0.001;
-this.add(this.cabezaCara);*/
+this.add(this.cabezaCara);
 
 
-var figura = new THREE.Shape(); // codigo para compu 
+/*var figura = new THREE.Shape(); // codigo para compu 
 figura.moveTo(0,1);
 for ( var i=0; i<7; i+=.01){
 	figura.lineTo((Math.cos(i)),(Math.sin(i)));
@@ -64,7 +64,7 @@ var forma = new THREE.ShapeGeometry(figura);
 this.ojo = new THREE.Mesh(forma,new THREE.MeshNormalMaterial());
 this.ojo.position.y=3.5;
 this.ojo.position.z=4.01;
-this.add(this.ojo);
+this.add(this.ojo);*/
 
 
 // se desplazan las mallas.
