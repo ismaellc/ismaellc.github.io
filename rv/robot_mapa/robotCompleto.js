@@ -50,7 +50,7 @@ THREE.ImageUtils.crossOrigin=''; //codigo para servidor
 var texturaCabeza=THREE.ImageUtils.loadTexture("imagenes/cabeza.PNG");
 var formacabezaCara = new THREE.BoxGeometry(7.998,6,8);
 this.cabezaCara = new THREE.Mesh(formacabezaCara,new THREE.MeshPhongMaterial({map:texturaCabeza}));
-this.cabezaCara.position.y = 12;
+this.cabezaCara.position.y = 3.5;
 this.cabezaCara.position.z = 0.001;
 this.add(this.cabezaCara);
 
