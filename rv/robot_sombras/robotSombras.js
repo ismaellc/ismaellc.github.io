@@ -6,6 +6,7 @@ function setup(){
 
 	var iluminacion = new THREE.PointLight(0xffffff);
 	iluminacion.position.y=50;
+	iluminacion.position.z=5;
 	
 	escena= new THREE.Scene();
 	escena.add(robot);
