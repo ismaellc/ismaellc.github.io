@@ -1,6 +1,6 @@
 function setup(){
 	robot = new Robot();
-	robot.position.y = 1;
+	robot.position.y = 10;
 	
 	var base = new THREE.Mesh(new THREE.BoxGeometry(15,.1,15),new THREE.MeshPhongMaterial({color: 0x00ff00}));
 
